@@ -5,6 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spiritual PeakFitt</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Reset and Body Styling from style.css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0f1e, #3c144a);
+            color: white;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #3c144a;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #e04f92;
+        }
+
+        nav .logo img {
+            width: 80px;
+            border-radius: 50%;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: #e04f92;
+            border-radius: 5px;
+        }
+
+        .explore-section {
+            padding: 50px 20px;
+            background-color: #1a1a2e;
+            color: #fff;
+        }
+
+        .explore-heading {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: #ff79c6;
+            margin-bottom: 30px;
+        }
+
+        .fitness-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .fitness-card {
+            background: #201026;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s;
+        }
+
+        .fitness-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 3px solid #e04f92;
+        }
+
+        .fitness-card h2 {
+            font-size: 1.5rem;
+            color: #e04f92;
+            margin-bottom: 10px;
+        }
+
+        .fitness-card p {
+            font-size: 1rem;
+            color: lavender;
+            margin-bottom: 15px;
+        }
+
+        .fitness-card a {
+            text-decoration: none;
+            color: white;
+            background: #e04f92;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .fitness-card a:hover {
+            background: lavender;
+            color: black;
+        }
+
+        .fitness-card:hover {
+            transform: scale(1.05);
+        }
+
+        #about {
+            padding: 40px 20px;
+            background: rgba(60, 20, 74, 0.8);
+            color: white;
+            text-align: center;
+        }
+
+        #about h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .fitness-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -30,72 +172,34 @@
         </ul>
     </nav>
 
-    <section class="explore-section">
-        <h1 class="explore-heading">Spiritual Fitness: Nurturing Your Inner Self</h1>
-        
-        <div class="explore-item left">
-            <img src="../image/Spiritualfitness.jpg" alt="Spiritual Fitness" class="explore-img">
-            <div class="explore-content">
-                <h2 class="explore-title">What is Spiritual Fitness?</h2>
-                <p>Spiritual fitness refers to a state of well-being that focuses on one's sense of purpose, values, beliefs, and connection to something greater than oneself. It emphasizes finding meaning in life and cultivating a balanced, harmonious relationship with oneself, others, and the universe.</p>
-            </div>
-        </div>
-
-        <div class="explore-item right">
-            <img src="../image/Meditation1.jpg" alt="Meditation" class="explore-img">
-            <div class="explore-content">
-                <h2 class="explore-title">Key Components of Spiritual Fitness</h2>
-                <p>
-                    - Sense of Purpose and Meaning<br>
-                    - Inner Peace<br>
-                    - Gratitude and Compassion<br>
-                    - Self-Awareness<br>
-                    - Connection with Something Greater
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="info-section">
-        <h1>Benefits of Spiritual Fitness</h1>
-        <div class="about-content">
-            <div class="info-block">
-                <img src="../image/mentalhealthmatters.jpg" alt="Mental Resilience">
-                <p>Mental Resilience: Helps in coping with stress, anxiety, and challenges. Encourages positive thinking and emotional balance.</p>
-            </div>
-            <div class="info-block">
-                <img src="../image/Relationships.jpg" alt="Relationships">
-                <p>Improved Relationships: Promotes forgiveness, empathy, and understanding in personal and professional relationships.</p>
-            </div>
-            <div class="info-block">
-                <img src="../image/Focus.jpg" alt="Focus">
-                <p>Enhanced Focus and Clarity: Provides a sense of direction and helps prioritize what truly matters.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="fitness-types">
-        <h1>How to Cultivate Spiritual Fitness</h1>
+    <div class="explore-section">
+        <h1 class="explore-heading">Spiritual Fitness</h1>
         <div class="fitness-container">
             <div class="fitness-card">
-                <img src="../image/Meditation.jpg" alt="Meditation">
-                <h2>Meditation</h2>
-                <p>Practice daily meditation to calm the mind and focus on the present moment. Engage in mindfulness activities.</p>
+                <img src="../image/vedic meditation.webp" alt="Vedic Meditation">
+                <h2>Vedic Meditation</h2>
+                <p>Ancient practice of self-realization exploring deep meditative states, connecting with inner consciousness and universal wisdom.</p>
                 <a href="member-form1.html">Learn More</a>
             </div>
             <div class="fitness-card">
-                <img src="../image/gratitude.jpg" alt="Gratitude">
-                <h2>Gratitude Practice</h2>
-                <p>Write down three things you're grateful for every day. Reflect on positive experiences and blessings.</p>
+                <img src="../image/bhaktiyoga.jpeg" alt="Bhakti Yoga">
+                <h2>Bhakti Yoga</h2>
+                <p>Spiritual path of devotion and love, cultivating deep emotional connection with the divine through heartfelt practices.</p>
                 <a href="member-form1.html">Learn More</a>
             </div>
+           
             <div class="fitness-card">
-                <img src="../image/Service to other.jpeg" alt="Service">
-                <h2>Service to Others</h2>
-                <p>Volunteer or help someone in need. Acts of kindness strengthen a sense of community and purpose.</p>
+                <img src="../image/mantrachanting.jpg" alt="Mantra Chanting">
+                <h2>Mantra Chanting</h2>
+                <p>Sacred sound vibrations and rhythmic repetition for spiritual awakening, inner healing, and transcendental consciousness.</p>
                 <a href="member-form1.html">Learn More</a>
             </div>
         </div>
+    </div>
+
+    <section id="about">
+        <h1>Nurturing Spiritual Wellness</h1>
+        <p>Explore transformative Indian spiritual practices that illuminate the path to self-discovery, inner peace, and universal connection.</p>
     </section>
 </body>
 </html>
