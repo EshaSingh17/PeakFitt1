@@ -5,6 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mental PeakFitt</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Reset and Body Styling from style.css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0f1e, #3c144a);
+            color: white;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #3c144a;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #e04f92;
+        }
+
+        nav .logo img {
+            width: 80px;
+            border-radius: 50%;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: #e04f92;
+            border-radius: 5px;
+        }
+
+        .explore-section {
+            padding: 50px 20px;
+            background-color: #1a1a2e;
+            color: #fff;
+        }
+
+        .explore-heading {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: #ff79c6;
+            margin-bottom: 30px;
+        }
+
+        .fitness-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .fitness-card {
+            background: #201026;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s;
+        }
+
+        .fitness-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 3px solid #e04f92;
+        }
+
+        .fitness-card h2 {
+            font-size: 1.5rem;
+            color: #e04f92;
+            margin-bottom: 10px;
+        }
+
+        .fitness-card p {
+            font-size: 1rem;
+            color: lavender;
+            margin-bottom: 15px;
+        }
+
+        .fitness-card a {
+            text-decoration: none;
+            color: white;
+            background: #e04f92;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .fitness-card a:hover {
+            background: lavender;
+            color: black;
+        }
+
+        .fitness-card:hover {
+            transform: scale(1.05);
+        }
+
+        #about {
+            padding: 40px 20px;
+            background: rgba(60, 20, 74, 0.8);
+            color: white;
+            text-align: center;
+        }
+
+        #about h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .fitness-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
    <!-- Navigation Bar -->
@@ -30,73 +172,39 @@
     </ul>
 </nav>
 
-    <section class="explore-section">
-        <h1 class="explore-heading">Mental Fitness: Strengthening Your Mind</h1>
-        
-        <div class="explore-item left">
-            <img src="../image/mentalfitness.jpg" alt="Mental Fitness" class="explore-img">
-            <div class="explore-content">
-                <h2 class="explore-title">What is Mental Fitness?</h2>
-                <p>Mental fitness refers to the state of having a healthy and well-functioning mind that allows you to handle challenges, adapt to change, and maintain emotional balance. It involves cultivating mental resilience, cognitive sharpness, and emotional well-being.</p>
-            </div>
+<div class="explore-section">
+    <h1 class="explore-heading">Mental Fitness</h1>
+    <div class="fitness-container">
+        <div class="fitness-card">
+            <img src="../image/Meditation.jpg" alt="Meditation">
+            <h2>Meditation</h2>
+            <p>Mindfulness practices to calm the mind, reduce stress, and enhance mental clarity through focused awareness.</p>
+            <a href="member-form1.html">Learn More</a>
         </div>
+        <div class="fitness-card">
+            <img src="../image/indianmedittion.jpeg" alt="Pranayama">
+            <h2>Pranayama</h2>
+            <p>Breathing techniques that control mental and emotional states, promoting inner balance and energy regulation.</p>
+            <a href="member-form1.html">Learn More</a>
+        </div>
+        <div class="fitness-card">
+            <img src="../image/yoganidra.jpg" alt="Yoga Nidra">
+            <h2>Yoga Nidra</h2>
+            <p>Guided relaxation practice for deep mental rest, healing, and profound states of conscious relaxation.</p>
+            <a href="member-form1.html">Learn More</a>
+        </div>
+        <div class="fitness-card">
+            <img src="../image/mindfulchanting.webp" alt="Mindful Chanting">
+            <h2>Mindful Chanting</h2>
+            <p>Sound-based meditation using mantras to focus the mind, reduce mental noise, and cultivate inner peace.</p>
+            <a href="member-form1.html">Learn More</a>
+        </div>
+    </div>
+</div>
 
-        <div class="explore-item right">
-            <img src="../image/mentalfitnesskeyaspects.jpg" alt="Key Aspects" class="explore-img">
-            <div class="explore-content">
-                <h2 class="explore-title">Key Aspects of Mental Fitness</h2>
-                <p>
-                    - Emotional Regulation<br>
-                    - Resilience<br>
-                    - Cognitive Sharpness<br>
-                    - Stress Management<br>
-                    - Self-Awareness<br>
-                    - Social Connection
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="info-section">
-        <h1>Benefits of Mental Fitness</h1>
-        <div class="about-content">
-            <div class="info-block">
-                <img src="../image/Focus1.jpg" alt="Focus">
-                <p>Enhanced Focus and Productivity: Improves concentration, reduces procrastination, and helps prioritize tasks.</p>
-            </div>
-            <div class="info-block">
-                <img src="../image/emotionalhealth.jpg" alt="Emotional Health">
-                <p>Better Emotional Health: Reduces anxiety and depression, encourages positivity and self-confidence.</p>
-            </div>
-            <div class="info-block">
-                <img src="../image/Relationships.jpg" alt="Relationships">
-                <p>Stronger Relationships: Improves empathy, understanding, and communication with others.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="fitness-types">
-        <h1>How to Cultivate Mental Fitness</h1>
-        <div class="fitness-container">
-            <div class="fitness-card">
-                <img src="../image/Meditation.jpg" alt="Mindfulness">
-                <h2>Mindfulness</h2>
-                <p>Practice mindfulness to focus on the present moment and reduce overthinking. Meditation improves concentration and lowers stress levels.</p>
-                <a href="member-form1.html">Learn More</a>
-            </div>
-            <div class="fitness-card">
-                <img src="../image/PhysicalFitness1.jpg" alt="Physical Activity">
-                <h2>Physical Activity</h2>
-                <p>Exercise releases endorphins, the body's natural mood enhancers. Activities like yoga and walking can boost mental clarity.</p>
-                <a href="member-form1.html">Learn More</a>
-            </div>
-            <div class="fitness-card">
-                <img src="../image/nutrition.jpg" alt="Nutrition">
-                <h2>Balanced Nutrition</h2>
-                <p>Include brain-boosting foods like nuts, berries, and omega-3 fatty acids. Avoid excessive caffeine and processed foods.</p>
-                <a href="member-form1.html">Learn More</a>
-            </div>
-        </div>
-    </section>
+<section id="about">
+    <h1>Nurturing Mental Wellness</h1>
+    <p>Explore ancient Indian techniques that harmonize mind, body, and spirit through holistic mental fitness practices.</p>
+</section>
 </body>
 </html>
